@@ -85,8 +85,7 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- --> ! \[ \]
-(READE\_files/figure-gfm/Occupations Between Black and White
-Population.png)
+(READE\_files/figure-gfm/plot-1.png)
 
 ## Michel’s Data Visualization on City-Rural Residency
 
