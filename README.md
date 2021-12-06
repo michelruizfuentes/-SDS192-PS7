@@ -21,23 +21,22 @@ of **equity and accessibility in data visualizations**. I found the book
 “W.E.B. Du Bois’ Data Portraits: Visualizing Black America” which
 includes map, graphs and charts that DuBois and a team of black
 sociologist used to illustrate the experiences of black Americans from
-1790-1870.
-
-Ever since I discovered the data visualization contributions of DuBois
-and his team, I have been fascinated in using this tool to address other
-aspects of institutional racism or other social inequalities. In this
-problem set, I will use DuBois and his team’s data to create **data
-visualizations that represent the disparities Black Americans
-experienced in 1790-1870s**.
+1790-1870. Ever since I discovered the data visualization contributions
+of DuBois and his team, I have been fascinated in using this tool to
+address agendas that relate to social good. In probleset 07, I will
+pursue this by engaging in the \#DuBoisChallenge.
 
 ## Where is the Data From
 
-The dataset, **W.E.B Du Bois Challenge**, (published 02-16-2021) is from
-TidyTuesday. The challenge came from Anthony Starks in his article,
-[Recreating W.E.B Du Bois’s Data
-Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34)
+The data I am using, **W.E.B Du Bois Challenge**, (published 02-16-2021)
+is from TidyTuesday. The challenge came from Anthony Starks in his
+article, [Recreating W.E.B Du Bois’s Data
+Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34).
+As he describes it, the goal of the \#DuBoisChallenge is to “celebrate
+the data visualization legacy of W.E.B DuBois by recreating the
+visualizations from the 1900 Paris Exposition using modern tools.”
 
-## Reading in our CSV Files
+## Reading in the .csv files from TidyTuesday
 
 occupation.csv (Occupation by race)
 
@@ -45,12 +44,12 @@ occupation.csv (Occupation by race)
 occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
 ```
 
-
 city\_rural.csv (Black population split between city and rural areas)
 
 ``` r
 city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
 ```
+
 
 ## Michel’s Data Vizualization on Occupations
 
