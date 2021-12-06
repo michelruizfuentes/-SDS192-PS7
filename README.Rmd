@@ -48,7 +48,7 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
 
 ## Michel's Data Visualization on City-Rural Residency 
 
-```{r}
+```{r, echo = TRUE}
 ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Category)) + 
   geom_col() + labs(title= "Where Did Black Americans Reside in the 1890s?",
   subtitle= "Population in City versus Rural Areas") + 
