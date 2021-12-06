@@ -28,7 +28,7 @@ pursue this by engaging in the \#DuBoisChallenge.
 
 ## Where is the Data From
 
-The data I am using, **W.E.B Du Bois Challenge**, (published 02-16-2021)
+The data I am using, **W.E.B Du Bois Challenge** (published 02-16-2021),
 is from TidyTuesday. The challenge came from Anthony Starks in his
 article, [Recreating W.E.B Du Bois’s Data
 Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34).
@@ -36,7 +36,13 @@ As he describes it, the goal of the \#DuBoisChallenge is to “celebrate
 the data visualization legacy of W.E.B DuBois by recreating the
 visualizations from the 1900 Paris Exposition using modern tools.”
 
-## Reading in the .csv files from TidyTuesday
+## Loading necessary package and csv files from TidyTuesday
+
+``` r
+#loading necessary packages
+library(ggplot2)
+library(knitr)
+```
 
 occupation.csv (Occupation by race)
 
@@ -51,7 +57,7 @@ city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience
 ```
 
 
-## Michel’s Data Vizualization on Occupations
+## Modern Data Vizualization on Occupations
 
 ``` r
 ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group)) + 
@@ -62,9 +68,9 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-## Michel’s Data Visualization on City-Rural Residency
+## Modern Data Visualization on City-Rural Residency
 
 ``` r
 ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Category)) + 
@@ -75,22 +81,7 @@ ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Categor
   scale_fill_manual(values = c("deepskyblue3","lightpink3", "seagreen3", "hotpink4")) 
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
-
-## W.E.B Du Bois’ Data Vizualization on Occupations
-
-<figure>
-<img src="http://tile.loc.gov/storage-services/service/pnp/ppmsca/33800/33889v.jpg" style="width:45.0%" alt="“Figure 2. Du Bois, W.E.B. (1900). [Occupations of Negroes and whites in Georgia.] [Digital Art]. Library of Congress. https://www.loc.gov/item/2005676812/”" /><figcaption aria-hidden="true">“Figure 2. Du Bois, W.E.B. (1900). [Occupations of Negroes and whites in Georgia.] [Digital Art]. Library of Congress. <a href="https://www.loc.gov/item/2005676812/" class="uri">https://www.loc.gov/item/2005676812/</a>”</figcaption>
-</figure>
-
-## W.E.B Du Bois’ Data Visualization on City-Rural Residency
-
-<figure>
-<img src="https://th-thumbnailer.cdn-si-edu.com/-3rKfXYiL8uPo6IHezVkAdYb248=/fit-in/1600x0/filters:focal(1223x1116:1224x1117)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/3b/22/3b22a3d0-0a6f-42fb-a1d6-58019a3d9312/11_33873a_city_and_rural_population_18901.png" style="width:45.0%" alt="“Figure 3. Mansky, Jackie. (2018). [W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color.] [Digital Art]. Smithsonian Magazine. https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/”" /><figcaption aria-hidden="true">“Figure 3. Mansky, Jackie. (2018). [W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color.] [Digital Art]. Smithsonian Magazine. <a href="https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/" class="uri">https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/</a>”</figcaption>
-</figure>
-
-![](README_files/figure-gfm/occupations_digital)<!-- -->
-![](README_files/figure-gfm/city-rural_digital)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ## Conclusions
 
