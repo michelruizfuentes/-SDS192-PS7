@@ -84,8 +84,7 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- --> ! \[ \]
-(READE\_files/figure-gfm/plot-1.png)
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ## Michel’s Data Visualization on City-Rural Residency
 

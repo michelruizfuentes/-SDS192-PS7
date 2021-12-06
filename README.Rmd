@@ -45,7 +45,6 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
 
-
 ## Michel's Data Visualization on City-Rural Residency 
 
 ```{r, echo = TRUE}
