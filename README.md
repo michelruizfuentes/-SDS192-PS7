@@ -89,6 +89,9 @@ ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Categor
 <img src="https://th-thumbnailer.cdn-si-edu.com/-3rKfXYiL8uPo6IHezVkAdYb248=/fit-in/1600x0/filters:focal(1223x1116:1224x1117)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/3b/22/3b22a3d0-0a6f-42fb-a1d6-58019a3d9312/11_33873a_city_and_rural_population_18901.png" style="width:45.0%" alt="“Figure 3. Mansky, Jackie. (2018). [W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color.] [Digital Art]. Smithsonian Magazine. https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/”" /><figcaption aria-hidden="true">“Figure 3. Mansky, Jackie. (2018). [W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color.] [Digital Art]. Smithsonian Magazine. <a href="https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/" class="uri">https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/</a>”</figcaption>
 </figure>
 
+![](README_files/figure-gfm/occupations_digital)<!-- -->
+![](README_files/figure-gfm/city-rural_digital)<!-- -->
+
 ## Conclusions
 
 He concluded that this experience to recreate the visualizations,
