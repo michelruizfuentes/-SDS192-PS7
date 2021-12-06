@@ -77,7 +77,13 @@ furniture.csv
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
-## Data Visualization 1
+## W.E.B Du Bois’ Data Vizualization on Occupations
+
+<figure>
+<img src="http://tile.loc.gov/storage-services/service/pnp/ppmsca/33800/33889v.jpg" style="width:35.0%" alt="“Figure 2. Du Bois, W.E.B. (1900). [Occupations of Negroes and whites in Georgia.] [Digital Art]. Library of Congress. https://www.loc.gov/item/2005676812/”" /><figcaption aria-hidden="true">“Figure 2. Du Bois, W.E.B. (1900). [Occupations of Negroes and whites in Georgia.] [Digital Art]. Library of Congress. <a href="https://www.loc.gov/item/2005676812/" class="uri">https://www.loc.gov/item/2005676812/</a>”</figcaption>
+</figure>
+
+## Michel’s Data Vizualization on Occupations
 
 ``` r
 ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group)) + 
