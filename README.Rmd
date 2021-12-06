@@ -12,7 +12,7 @@ library(ggplot2)
 
 ## Inspired by W.E.B Du Bois' Legacy to Data Viz
 
-Last year, I was enrolled in a statistics course named "Communicating with Data". I had an exciting experience learning how I can apply my **passion for civic engagement, creativity, and problem-solving** in the Statistics and Data Science Major at Smith. We had several engaging units, but our focus on accessibility was one of my favorites. In this unit, we explored the importance of making data accessible for people of all backgrounds. For example, we discussed designing colorblind-friendly data visualizations by using inclusive color palettes.
+Last year, I was enrolled in a statistics course named "Communicating with Data". I had an exciting experience learning how I can apply my **passion for civic engagement, creativity, and problem-solving** in the Statistics and Data Science department at Smith. We had several engaging units, but our focus on accessibility was one of my favorites. In this unit, we explored the importance of making data accessible for people of all backgrounds. For example, we discussed designing colorblind-friendly data visualizations by using inclusive color palettes.
 
 This unit inspired me to search for more literature about this subject of **equity and accessibility in data visualizations**. I found the book "W.E.B. Du Bois' Data Portraits: Visualizing Black America" which includes map, graphs and charts that DuBois and a team of black sociologist used to illustrate the experiences of black Americans from 1790-1870. 
 
@@ -22,30 +22,26 @@ Ever since I discovered the data visualization contributions of DuBois and his t
 
 The dataset, **W.E.B Du Bois Challenge**, (published 02-16-2021) is from TidyTuesday. The challenge came from Anthony Starks in his article, [Recreating W.E.B Du Bois's Data Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34)  
 
-He concluded that this experience to recreate the visualizations, "taught me [him] to boldly use color, to provide focus with bold, simple visuals, to using data to tell compelling stories, and not to be afraid to shape your tools and materials to your own will. I’m [He is] inspired by them as a develop my own tools in the twenty-first century and hope they can also be used to inspire and motivate." I seek to have the same impact in PS07 and other visualizations I create in the future.
-
 ## Datasets I will use
 
 occupation.csv (Occupation by race)
-```{r}
+```{r, echo = FALSE}
 occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
 ```
 
 city_rural.csv (Black population split between city and rural areas)
-```{r}
+```{r, echo = FALSE}
 city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
 ```
 
 furniture.csv
-```{r}
+```{r, echo = FALSE}
 furniture <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/furniture.csv')
 ```
 
-theme(axis.text.x = element_text(angle = 50, hjust=1))
-
 ## Data Visualization 1
 
-```{r}
+```{r, echo = TRUE}
 ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group)) + 
   geom_col() + labs(title= "Occupations Between Black and White Population",
   subtitle= "Data Collected in Georgia from 1790s to 1870s",
@@ -53,6 +49,14 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   xlab("Percentage") + ylab("Occupation Type") +
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
+## Data Visualization 2
 
+## Conclusions 
+
+He concluded that this experience to recreate the visualizations, "taught me [him] to boldly use color, to provide focus with bold, simple visuals, to using data to tell compelling stories, and not to be afraid to shape your tools and materials to your own will. I’m [He is] inspired by them as a develop my own tools in the twenty-first century and hope they can also be used to inspire and motivate." I seek to have the same impact in PS07 and other visualizations I create in the future.
+
+## Acknowledgements
+
+I want to thank Professor Kim, Professor Poirier, and Professor Kinnaird for their support in building my data analysis skills!
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

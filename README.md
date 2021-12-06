@@ -10,7 +10,7 @@ PS07 Michel Ruiz-Fuentes
 Last year, I was enrolled in a statistics course named “Communicating
 with Data”. I had an exciting experience learning how I can apply my
 **passion for civic engagement, creativity, and problem-solving** in the
-Statistics and Data Science Major at Smith. We had several engaging
+Statistics and Data Science department at Smith. We had several engaging
 units, but our focus on accessibility was one of my favorites. In this
 unit, we explored the importance of making data accessible for people of
 all backgrounds. For example, we discussed designing colorblind-friendly
@@ -37,21 +37,9 @@ TidyTuesday. The challenge came from Anthony Starks in his article,
 [Recreating W.E.B Du Bois’s Data
 Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34)
 
-He concluded that this experience to recreate the visualizations,
-“taught me \[him\] to boldly use color, to provide focus with bold,
-simple visuals, to using data to tell compelling stories, and not to be
-afraid to shape your tools and materials to your own will. I’m \[He is\]
-inspired by them as a develop my own tools in the twenty-first century
-and hope they can also be used to inspire and motivate.” I seek to have
-the same impact in PS07 and other visualizations I create in the future.
-
 ## Datasets I will use
 
 occupation.csv (Occupation by race)
-
-``` r
-occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
-```
 
     ## Rows: 10 Columns: 3
 
@@ -66,10 +54,6 @@ occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience
 
 city\_rural.csv (Black population split between city and rural areas)
 
-``` r
-city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
-```
-
     ## Rows: 4 Columns: 2
 
     ## ── Column specification ────────────────────────────────────────────────────────
@@ -83,10 +67,6 @@ city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience
 
 furniture.csv
 
-``` r
-furniture <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/furniture.csv')
-```
-
     ## Rows: 6 Columns: 2
 
     ## ── Column specification ────────────────────────────────────────────────────────
@@ -96,8 +76,6 @@ furniture <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/
     ## 
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-
-theme(axis.text.x = element\_text(angle = 50, hjust=1))
 
 ## Data Visualization 1
 
@@ -110,7 +88,23 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- --> \#\# Data
+Visualization 2
+
+## Conclusions
+
+He concluded that this experience to recreate the visualizations,
+“taught me \[him\] to boldly use color, to provide focus with bold,
+simple visuals, to using data to tell compelling stories, and not to be
+afraid to shape your tools and materials to your own will. I’m \[He is\]
+inspired by them as a develop my own tools in the twenty-first century
+and hope they can also be used to inspire and motivate.” I seek to have
+the same impact in PS07 and other visualizations I create in the future.
+
+## Acknowledgements
+
+I want to thank Professor Kim, Professor Poirier, and Professor Kinnaird
+for their support in building my data analysis skills!
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
