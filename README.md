@@ -41,6 +41,10 @@ Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portrai
 
 occupation.csv (Occupation by race)
 
+``` r
+occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
+```
+
     ## Rows: 10 Columns: 3
 
     ## ── Column specification ────────────────────────────────────────────────────────
@@ -53,6 +57,10 @@ occupation.csv (Occupation by race)
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
 city\_rural.csv (Black population split between city and rural areas)
+
+``` r
+city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
+```
 
     ## Rows: 4 Columns: 2
 

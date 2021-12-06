@@ -25,12 +25,12 @@ The dataset, **W.E.B Du Bois Challenge**, (published 02-16-2021) is from TidyTue
 ## Reading in our CSV Files
 
 occupation.csv (Occupation by race)
-```{r, echo = FALSE}
+```{r, show_col_types = FALSE}
 occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
 ```
 
 city_rural.csv (Black population split between city and rural areas)
-```{r, echo = FALSE}
+```{r, show_col_types = FALSE}
 city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
 ```
 
