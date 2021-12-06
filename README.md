@@ -76,14 +76,16 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- --> ! \[ \]
+(READE\_files/figure-gfm/Occupations Between Black and White
+Population.png)
 
 ## Michel’s Data Visualization on City-Rural Residency
 
 ``` r
 ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Category)) + 
   geom_col() + labs(title= "Where Did Black Americans Reside in the 1890s?",
-                    subtitle= "Population in City versus Rural Areas") + 
+  subtitle= "Population in City versus Rural Areas") + 
   xlab("Georgraphic Classification") + ylab("Population Amount") +
   theme(axis.text.x = element_text(angle = 20, hjust=1)) +
   scale_fill_manual(values = c("deepskyblue3","lightpink3", "seagreen3", "hotpink4")) 

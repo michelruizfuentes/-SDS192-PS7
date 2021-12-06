@@ -44,6 +44,7 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   xlab("Percentage") + ylab("Occupation Type") +
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
+! [ ] (READE_files/figure-gfm/Occupations Between Black and White Population.png)
 
 ## Michel's Data Visualization on City-Rural Residency 
 
