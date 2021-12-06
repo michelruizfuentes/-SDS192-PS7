@@ -98,5 +98,4 @@ the same impact in PS07 and other visualizations I create in the future.
 I want to thank Professor Kim, Professor Poirier, and Professor Kinnaird
 for their support in building my data analysis skills!
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+

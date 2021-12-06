@@ -7,12 +7,6 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
-#loading necessary packages
-library(ggplot2)
-library(knitr)
-```
-
 !["Figure 1. (2019). [Du Bois Legacy Committee Seeks Nominations for Second W.E.B. Du Bois Legacy Award] [Digital Art]. Great Barrington Massachussetts. https://www.townofgb.org/home/news/du-bois-legacy-committee-seeks-nominations-second-web-du-bois-legacy-award"](https://www.townofgb.org/sites/g/files/vyhlif636/f/styles/news_image_teaser/public/news/dubois-interior1-1540x1026_1.jpg?itok=75EiDw5S){width=85%}
 
 ## Inspired by W.E.B Du Bois' Legacy to Data Viz
@@ -25,7 +19,13 @@ This unit inspired me to search for more literature about this subject of **equi
 
 The data I am using, **W.E.B Du Bois Challenge** (published 02-16-2021), is from TidyTuesday. The challenge came from Anthony Starks in his article, [Recreating W.E.B Du Bois's Data Portraits](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34). As he describes it, the goal of the #DuBoisChallenge is to "celebrate the data visualization legacy of W.E.B DuBois by recreating the visualizations from the 1900 Paris Exposition using modern tools."
 
-## Reading in the .csv files from TidyTuesday
+## Loading necessary package and csv files from TidyTuesday
+
+```{r}
+#loading necessary packages
+library(ggplot2)
+library(knitr)
+```
 
 occupation.csv (Occupation by race)
 ```{r, show_col_types = FALSE}
@@ -37,7 +37,7 @@ city_rural.csv (Black population split between city and rural areas)
 city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
 ```
 
-## Modern Data Vizualization on Occupations
+## Data Vizualization on Occupations
 
 ```{r, echo = TRUE}
 ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group)) + 
@@ -48,24 +48,17 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
   scale_fill_manual(values = c("salmon4", "bisque1"))
 ```
 
-## Modern Data Visualization on City-Rural Residency 
+## Data Visualization on City-Rural Residency 
 
 ```{r, echo = TRUE}
 ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Category)) + 
   geom_col() + labs(title= "Where Did Black Americans Reside in the 1890s?",
   subtitle= "Population in City versus Rural Areas") + 
-  xlab("Georgraphic Classification") + ylab("Population Amount") +
+  xlab("Geographic Classification") + ylab("Population Amount") +
   theme(axis.text.x = element_text(angle = 20, hjust=1)) +
   scale_fill_manual(values = c("deepskyblue3","lightpink3", "seagreen3", "hotpink4")) 
 ```
 
-## W.E.B Du Bois' Data Vizualization on Occupations
-
-!["Figure 2. Du Bois, W.E.B. (1900). [Occupations of Negroes and whites in Georgia.] [Digital Art]. Library of Congress. https://www.loc.gov/item/2005676812/"](http://tile.loc.gov/storage-services/service/pnp/ppmsca/33800/33889v.jpg){width=45%}
-
-## W.E.B Du Bois' Data Visualization on City-Rural Residency 
-
-!["Figure 3. Mansky, Jackie. (2018). [W.E.B. Du Bois’ Visionary Infographics Come Together for the First Time in Full Color.] [Digital Art]. Smithsonian Magazine. https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/"](https://th-thumbnailer.cdn-si-edu.com/-3rKfXYiL8uPo6IHezVkAdYb248=/fit-in/1600x0/filters:focal(1223x1116:1224x1117)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/3b/22/3b22a3d0-0a6f-42fb-a1d6-58019a3d9312/11_33873a_city_and_rural_population_18901.png){width=45%}
 
 ## Conclusions 
 
@@ -75,4 +68,3 @@ He concluded that this experience to recreate the visualizations, "taught me [hi
 
 I want to thank Professor Kim, Professor Poirier, and Professor Kinnaird for their support in building my data analysis skills!
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
