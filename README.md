@@ -53,13 +53,12 @@ library(knitr)
 #occupation.csv (Occupation by race)
 occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
 ```
-
+   
 
 ``` r
 #city_rural.csv (Black population split between city and rural areas)
 city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
 ```
-
 
 
 ## Data Visualization 1: on City-Rural Residency
@@ -121,6 +120,14 @@ hopes he can inspire and motivate others like the [Du Bois
 illustrations](https://www.itsnicethat.com/articles/w-e-b-du-bois-charting-black-lives-house-of-illustration-131119)
 did. I seek to have the same impact in PS07 and in the other
 visualizations I create in the future!
+
+(in my attempts to stay true to the data set, I kept the names for each
+racial group as Du Bois, and his team took note of during this period. I
+renamed my titles to say Black because I have read literature explaining
+why “Negro” is dated and offensive but kept the legend with the names Du
+Bois listed. I am open and appreciate all feedback, so if you believe
+that I should also change the labels of this racial group in the legend,
+I can make this change)
 
 ## Acknowledgements
 

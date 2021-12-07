@@ -77,6 +77,8 @@ This bar chart demonstrates the differences between the types of jobs and occupa
 
 As Du Bois highlights in his data visualizations, these depictions reveal social inequities and the effects of institutional racism. At the end of this challenge, the challenge creator, Anthony, said this experience taught him to use data, “to tell compelling stories” and he hopes he can inspire and motivate others like the [Du Bois illustrations](https://www.itsnicethat.com/articles/w-e-b-du-bois-charting-black-lives-house-of-illustration-131119) did. I seek to have the same impact in PS07 and in the other visualizations I create in the future!
 
+(in my attempts to stay true to the data set, I kept the names for each racial group as Du Bois, and his team took note of during this period. I renamed my titles to say Black because I have read literature explaining why "Negro" is dated and offensive but kept the legend with the names Du Bois listed. I am open and appreciate all feedback, so if you believe that I should also change the labels of this racial group in the legend, I can make this change)
+
 ## Acknowledgements
 
 I want to thank Professor Kim, Professor Poirier, Professor Kinnaird, and Professor Blankson
