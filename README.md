@@ -25,7 +25,7 @@ includes map, graphs and charts that Du Bois and a team of black
 sociologist used to illustrate the experiences of Black Americans from the 
 1790-1870. Ever since I discovered the  contributions
 of DuBois and his team to the data visualization world, I have been eager to explore the
-intersection of data science and social science to uplift agenda focused
+intersection of data science and social science to uplift agendas focused
 on social good. In Problem Set 07, I will
 pursue this interest by engaging in the \#DuBoisChallenge.
 
@@ -99,7 +99,7 @@ ggplot(data = occupation, mapping = aes(x=Percentage, y= Occupation, fill= Group
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 This bar chart demonstrates the differences between the types of jobs
-and occupations between the [Occupations of Black and WHite People in
+and occupations between the [Occupations of Black and White People in
 Georgia](https://www.loc.gov/item/2005676812/). This visualization is
 vital for our analysis of inequities because it shows how certain
 professions, especially ones with a reputation of paying better, were
@@ -116,12 +116,10 @@ available to them.
 As Du Bois highlights in his data visualizations, these depictions
 reveal social inequities and the effects of institutional racism. 
 At the end of this challenge, the challenge creator, Anthony, said this experience taught him to use data, “to tell
-compelling stories, and not to be afraid to shape your tools,” and he is
-inspired by the [Du Bois
-illustrations](https://www.itsnicethat.com/articles/w-e-b-du-bois-charting-black-lives-house-of-illustration-131119)
-and hopes this creations can also inspire and motivate like Du Bois’
-legacy has. I seek to have the same impact in PS07 and in the other
-visualizations I create in the future.
+compelling stories” and he hopes he can inspire and motivate others like the [Du Bois
+illustrations](https://www.itsnicethat.com/articles/w-e-b-du-bois-charting-black-lives-house-of-illustration-131119) did.
+I seek to have the same impact in PS07 and in the other
+visualizations I create in the future!
 
 ## Acknowledgements
 
