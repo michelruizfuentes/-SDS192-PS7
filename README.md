@@ -1,7 +1,9 @@
 PS07
 ================
 
-Michel Ruiz-Fuentes 
+-   Michel Ruiz-Fuentes
+-   SDS192 (02) Data Science
+-   6 Dec. 2021
 
 <figure>
 <img src="https://www.townofgb.org/sites/g/files/vyhlif636/f/styles/news_image_teaser/public/news/dubois-interior1-1540x1026_1.jpg?itok=75EiDw5S" style="width:85.0%" alt="“Figure 1. (2019). [Du Bois Legacy Committee Seeks Nominations for Second W.E.B. Du Bois Legacy Award] [Digital Art]. Great Barrington Massachussetts. https://www.townofgb.org/home/news/du-bois-legacy-committee-seeks-nominations-second-web-du-bois-legacy-award”" /><figcaption aria-hidden="true">“Figure 1. (2019). [Du Bois Legacy Committee Seeks Nominations for Second W.E.B. Du Bois Legacy Award] [Digital Art]. Great Barrington Massachussetts. <a href="https://www.townofgb.org/home/news/du-bois-legacy-committee-seeks-nominations-second-web-du-bois-legacy-award" class="uri">https://www.townofgb.org/home/news/du-bois-legacy-committee-seeks-nominations-second-web-du-bois-legacy-award</a>”</figcaption>
@@ -10,7 +12,7 @@ Michel Ruiz-Fuentes
 ## Inspired by W.E.B Du Bois’ Legacy to Data Viz
 
 Last year, I was enrolled in a statistics course named “Communicating
-with Data." I had an exciting experience learning how I can apply my
+with Data”. I had an exciting experience learning how I can apply my
 **passion for civic engagement, creativity, and problem-solving** in the
 Statistics and Data Science department at Smith. We had several engaging
 units, but our focus on accessibility was one of my favorites. In this
@@ -21,13 +23,13 @@ data visualizations by using inclusive color palettes.
 This unit inspired me to search for more literature about this subject
 of **equity and accessibility in data visualizations**. I found the book
 “W.E.B. Du Bois’ Data Portraits: Visualizing Black America” which
-includes map, graphs and charts that Du Bois and a team of black
-sociologist used to illustrate the experiences of Black Americans from the 
-1790-1870. Ever since I discovered the  contributions
-of DuBois and his team to the data visualization world, I have been eager to explore the
-intersection of data science and social science to uplift agendas focused
-on social good. In Problem Set 07, I will
-pursue this interest by engaging in the \#DuBoisChallenge.
+includes map, graphs and charts that DuBois and a team of black
+sociologist used to illustrate the experiences of black Americans from
+1790-1870. Ever since I discovered the contributions of DuBois and his
+team to the data visualization world, I have been eager to explore the
+intersection of data science and social science to uplift agendas
+focused on social good. In Problem Set 07, I will pursue this interest
+by engaging in the \#DuBoisChallenge.
 
 ## Where is the Data From
 
@@ -54,7 +56,7 @@ occupation <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience
 
 
 ``` r
-#city\_rural.csv (Black population split between city and rural areas)
+#city_rural.csv (Black population split between city and rural areas)
 city_rural <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
 ```
 
@@ -71,19 +73,17 @@ ggplot(data = city_rural, mapping = aes(x=Category, y= Population, fill= Categor
   scale_fill_manual(values = c("deepskyblue3","lightpink3", "seagreen3", "hotpink4")) 
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- --> 
-
-
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 This bar chart is a modern visualization of the data captured by Atlanta
-Univeristy and Du Bois’ in their visualization titled, [City and Rural Population
-in
+Univeristy and Du Bois’ in their visualization titled, \[City and Rural
+Population in [City and Rural Population in
 1890](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34).
 This visualization illustrates institutional racism and the highlights
-disparities. How does this data convey inequities? By plotting geographic
-data and where Black Americans resided in this period
-we are highlighting issues associated with segregation and this
-consequently also exposes unequal opportunities for Black Americans.
+disparities. How does this data convey inequities? By plotting
+geographic data and where Black Americans resided in this period we are
+highlighting issues associated with segregation and this consequently
+also shows the unequal opportunities for Black Americans.
 
 ## Data Vizualization 2: on Occupations
 
@@ -105,23 +105,25 @@ vital for our analysis of inequities because it shows how certain
 professions, especially ones with a reputation of paying better, were
 mostly for White Americans, whereas Black Americans filled the
 agricultural or domestic service roles. Our previous plot is
-instrumental to this analysis because in the first visualized we assessed that the 
-majority of Black Americans lived in the “Country and Village” so we can predict that 
-the majority of their occupations were “Agriculture, Fisheries and
-Mining” and Domestic and Personal Service" because these were the occupations
-available to them.
+instrumental to this analysis because in the first visualized we
+assessed that the majority of Black Americans lived in the “Country and
+Village” so we can predict that the majority of their occupations were
+“Agriculture, Fisheries and Mining” and Domestic and Personal Service"
+because these were the occupations available to them.
 
 ## Conclusions
 
 As Du Bois highlights in his data visualizations, these depictions
-reveal social inequities and the effects of institutional racism. 
-At the end of this challenge, the challenge creator, Anthony, said this experience taught him to use data, “to tell
-compelling stories” and he hopes he can inspire and motivate others like the [Du Bois
-illustrations](https://www.itsnicethat.com/articles/w-e-b-du-bois-charting-black-lives-house-of-illustration-131119) did.
-I seek to have the same impact in PS07 and in the other
+reveal social inequities and the effects of institutional racism. At the
+end of this challenge, the challenge creator, Anthony, said this
+experience taught him to use data, “to tell compelling stories” and he
+hopes he can inspire and motivate others like the [Du Bois
+illustrations](https://www.itsnicethat.com/articles/w-e-b-du-bois-charting-black-lives-house-of-illustration-131119)
+did. I seek to have the same impact in PS07 and in the other
 visualizations I create in the future!
 
 ## Acknowledgements
 
-I want to thank Professor Kim, Professor Poirier, Professor Kinnaird, and Professor Blankson
-for their support in building my data analysis skills!
+I want to thank Professor Kim, Professor Poirier, Professor Kinnaird,
+and Professor Blankson for their support in building my data analysis
+skills!
