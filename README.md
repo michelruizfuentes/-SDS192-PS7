@@ -2,7 +2,7 @@ PS07
 ================
 
 -   Michel Ruiz-Fuentes
--   SDS192 (02) Data Science
+-   SDS192 (02) Introduction to Data Science
 -   6 Dec. 2021
 
 # Build your first README (Problem Set 7)
